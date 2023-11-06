@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    li {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+    li p {
+        flex: 0 0 100px;
+        display: block;
+        margin: 0;
+    }
+</style>
+<body>
+    <div>
+        <div>
+            <h2>1. Завдання Переход на сторінку</h2>
+            <p> На сторінці є дві кнопки. При натисканні на першу кнопку користувач повинен ввести в
+                prompt посилання, при натисканні на другу – переадресовується на інший сайт
+                (за раніше введеним посиланням).
+            </p>
+
+            <button class="link">Enter link</button>
+            <button class="site">Go to website</button>
+        </div>
+
+        <div>
+            <h2>2. Завдання. Використання подій</h2>
+            <p>
+                Створіть HTML-сторінку з декількома кнопками. Ваше завдання - створити обробник подій
+                для батьківського елементу, який відслідковуватиме кліки на всіх кнопках.
+                Покроковий план:
+                Створіть HTML-елементи: батьківський контейнер з декількома вкладеними кнопками.
+                Додайте обробник подій до батьківського контейнера, який відслідковуватиме кліки.
+                Після кліку на будь-якій кнопці, виведіть повідомлення про те, яка саме кнопка була клікнута.
+            </p>
+
+            <div class="js--buttonParent">
+                <button class="js--button1">Button 1</button>
+                <button class="js--button2">Button 2</button>
+                <button class="js--button3">Button 3</button>
+            </div>
+        </div>
+
+        <div>
+            <h2>3. Завдання TO-DO лист:</h2>
+            <p>
+                Створіть HTML-сторінку, яка містить список завдань (to-do list) з можливістю додавання нових завдань.
+                Ваше ціль - використовуючи делегування подій, створити обробник подій для списку завдань,
+                який дозволить видаляти завдання при кліку на них.
+            </p>
+
+            <h2>TO-DO LIST</h2>
+            <ul class="js--task-list"></ul>
+            <input class="js--text-task" type="text" placeholder="Add a new task">
+            <button class="js--but-add">Add to tasks</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
